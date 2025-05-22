@@ -1,0 +1,5 @@
+https://github.com/naveedkhan1998/mnk-django-nextjs-template/tree/main
+https://github.com/Bklieger/django-google-oauth2/tree/main
+
+all-auth tutorial
+https://dev.to/odhiambo/integrate-google-oauth2-social-authentication-into-your-django-web-app-1bk5#google
