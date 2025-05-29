@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'alluth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +62,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 
     # 'allauth' specific authentication methods, such as login by email
-    'allauth.accounts.auth_backends.AuthenticationBackend'
+    'allauth.account.auth_backends.AuthenticationBackend'
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
@@ -160,5 +160,5 @@ AUTH_USER_MODEL = 'authentication.CustomUser'
 # Django allauth config
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_SIGNUP_FIELDS = ['email*']
+ACCOUNT_LOGIN_METHODS = {'email'}
